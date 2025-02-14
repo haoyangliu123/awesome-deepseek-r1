@@ -86,7 +86,7 @@ DeepSeek-R1 uses long CoT reasoning technology, with a thought chain length that
 | Datawhale-R1            | [[Code]](https://github.com/datawhalechina/unlock-deepseek)<br />[[Blog]](https://datawhalechina.github.io/unlock-deepseek/) | Qwen2.5-3B-Instruct                                          | [[Countdown-Tasks-3to4]](https://huggingface.co/datasets/Jiayi-Pan/Countdown-Tasks-3to4) | ✏ Countdown               | 3 A800s                                             |
 | demystify-long-cot      | [[Code]](https://github.com/eddycmu/demystify-long-cot)<br />[[Paper]](https://arxiv.org/abs/2502.03373) | Llama-3.1-8B/ Qwen2.5-Math-7B                                | MATH and WebIT                                               | 🔢 Mathematical Reasoning  | -                                                   |
 
-## Benchmarks
+## Datasets
 
 |                                                    | Links                                                        | Size of downloaded dataset files | Number of Rows | Descriptions                                                 |
 | -------------------------------------------------- | ------------------------------------------------------------ | -------------------------------- | -------------- | ------------------------------------------------------------ |
