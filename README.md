@@ -2,7 +2,7 @@
 A collection of the recent reproduction papers and projects on DeepSeek-R1
 
 
-[🎉](https://api-docs.deepseek.com/zh-cn/news/news250120) The **Awesome DeepSeek-R1 Collection** aims to serve as a centralized repository of high-quality reproductions, adaptations, and extensions of the original DeepSeek-R1 model. This collection will include:
+[🎉](https://api-docs.deepseek.com/zh-cn/news/news250120) The **Awesome DeepSeek-R1 Collection** aims to serve as a repository of high-quality reproductions, adaptations, and extensions of the original DeepSeek-R1 model. This collection will include:
 
 - **Reproduction Papers**: Detailed reports on successful reproductions of DeepSeek-R1, highlighting methodologies, results, and lessons learned.
 - **Code Repositories**: Open-source implementations of DeepSeek-R1, providing researchers and developers with the tools to experiment and build upon the model.
@@ -12,8 +12,6 @@ A collection of the recent reproduction papers and projects on DeepSeek-R1
 ## DeepSeek-R1-Zero and DeepSeek-R1
 
 Large Language Models (LLMs) have shown remarkable progress in recent years, with a focus on achieving Artificial General Intelligence (AGI). Post-training methods, such as reinforcement learning, have become crucial for enhancing model performance in reasoning tasks. OpenAI's o1 series models have set a benchmark by introducing inference-time scaling through extended Chain-of-Thought (CoT) reasoning. However, effective test-time scaling remains a challenge. This paper explores the potential of pure reinforcement learning (RL) to improve reasoning capabilities without supervised data, aiming to align with human preferences and enhance performance across diverse tasks.
-
-
 
 ### DeepSeek-R1-Zero: Reinforcement Learning on the Base Model
 
@@ -70,12 +68,12 @@ DeepSeek-R1 uses long CoT reasoning technology, with a thought chain length that
 
 
 
-### Reproduction Projects and Papers
+## Reproduction Projects and Papers
 
 |                         | Links                                                        | Base Model                                                   | Training Data                                                | Tasks                     | Training Resources                                  |
 | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------- | --------------------------------------------------- |
 | DeepSeek-R1             | [[Demo]](https://chat.deepseek.com/)<br />[[Github]](https://github.com/deepseek-ai/DeepSeek-R1)<br />[[Paper]](https://arxiv.org/abs/2501.12948) | DeepSeek-V3                                                  | -                                                            | 🔢 Mathematical  Reasoning | -                                                   |
-| Open-R1                 | [[Code]](https://github.com/huggingface/open-r1)<br />[[Demo]](https://open-r1.com/) | Qwen2.5-1.5B-Instruct/ Qwen2.5-Math-7B/ Qwen-32B/Qwen-72B/ Llama-8B/ Llama-70B | [[Bespoke-Stratos-17k]](https://huggingface.co/datasets/HuggingFaceH4/Bespoke-Stratos-17k) | 🔢 Mathematical  Reasoning | 1-2 Nodes of H100s                                  |
+| Open-R1                 | [[Code]](https://github.com/huggingface/open-r1)<br />[[Demo]](https://open-r1.com/) | Qwen2.5-1.5B-Instruct/ Qwen2.5-Math-7B/ Qwen-32B/Qwen-72B/ Llama-8B/ Llama-70B | [[Bespoke-Stratos-17k]](https://huggingface.co/datasets/HuggingFaceH4/Bespoke-Stratos-17k)<br />[[OpenR1-Math-220k]](https://huggingface.co/datasets/open-r1/OpenR1-Math-220k) | 🔢 Mathematical  Reasoning | 1-2 Nodes of H100s                                  |
 | TinyZero                | [[Code]](https://github.com/Jiayi-Pan/TinyZero)<br />[[Experiment Log]](https://wandb.ai/jiayipan/TinyZero) | QWen-2.5-3B Instruct                                         | [[Countdown-Tasks-3to4]](https://huggingface.co/datasets/Jiayi-Pan/Countdown-Tasks-3to4) | ✏ Countdown               | 4 A800s                                             |
 | Mini-R1                 | [[Code]](https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/mini-deepseek-r1-aha-grpo.ipynb)<br />[[Tutorial]](https://www.philschmid.de/mini-deepseek-r1) | Qwen2.5-3B-Instruct                                          | [[Countdown-Tasks-3to4]](https://huggingface.co/datasets/Jiayi-Pan/Countdown-Tasks-3to4) | ✏ Countdown               | 4 H100s                                             |
 | DeepScaleR              | [[Code]](https://github.com/agentica-project/deepscaler)<br />[[Model]](https://huggingface.co/agentica-org/DeepScaleR-1.5B-Preview)<br />[[Blog]](https://pretty-radio-b75.notion.site/DeepScaleR-Surpassing-O1-Preview-with-a-1-5B-Model-by-Scaling-RL-19681902c1468005bed8ca303013a4e2) | DeepSeek-R1-Distill-Qwen-1.5B                                | [DeepScaleR-Preview-Dataset](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset) /  [JSON Dataset](https://github.com/agentica-project/deepscaler/tree/main/deepscaler/data) | 🔢 Mathematical Reasoning  | 8 A800s for single-node and 32 A800s for multi-node |
@@ -88,6 +86,22 @@ DeepSeek-R1 uses long CoT reasoning technology, with a thought chain length that
 | Datawhale-R1            | [[Code]](https://github.com/datawhalechina/unlock-deepseek)<br />[[Blog]](https://datawhalechina.github.io/unlock-deepseek/) | Qwen2.5-3B-Instruct                                          | [[Countdown-Tasks-3to4]](https://huggingface.co/datasets/Jiayi-Pan/Countdown-Tasks-3to4) | ✏ Countdown               | 3 A800s                                             |
 | demystify-long-cot      | [[Code]](https://github.com/eddycmu/demystify-long-cot)<br />[[Paper]](https://arxiv.org/abs/2502.03373) | Llama-3.1-8B/ Qwen2.5-Math-7B                                | MATH and WebIT                                               | 🔢 Mathematical Reasoning  | -                                                   |
 
+## Benchmarks
+
+|                                                    | Links                                                        | Size of downloaded dataset files | Number of Rows | Descriptions                                                 |
+| -------------------------------------------------- | ------------------------------------------------------------ | -------------------------------- | -------------- | ------------------------------------------------------------ |
+| Bespoke-Stratos-17k                                | [[Hugging face]](https://huggingface.co/datasets/bespokelabs/Bespoke-Stratos-17k) | 125 MB                           | 16.7k          | A reasoning dataset of questions, reasoning traces, and answers sing SFT distillation data from DeepSeek-R1. |
+| OpenThoughts-114k                                  | [[Hugging face]](https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k) | 3.55 GB                          | 114k           | Open synthetic reasoning dataset with 114k high-quality examples covering math, science, code, and puzzles. |
+| dolphin-r1                                         | [[Hugging face]](https://huggingface.co/datasets/cognitivecomputations/dolphin-r1) | 3.98GB                           | 800k           | 300k reasoning samples from DeepSeek-R1/<br />300k reasoning samples from Gemini 2.0 flash thinking/<br />200k samples of Dolphin chat |
+| R1-Distill-SFT                                     | [[Hugging face]](https://huggingface.co/datasets/ServiceNow-AI/R1-Distill-SFT) | 11.7 GB                          | 1.68M          | Distilled with DeepSeek-R1-32b and generated using Numina-math and Tulu. |
+| Sky-T1_data_17k                                    | [[Hugging face]](https://huggingface.co/datasets/NovaSky-AI/Sky-T1_data_17k) | 268 MB                           | 16.4k          | The final data contains 5k coding data from APPs and TACO, and 10k math data from AIME, MATH, and Olympiads subsets of the NuminaMATH dataset. In addition, 1k science and puzzle data from STILL-2. |
+| Magpie-Reasoning-V2-250K-CoT-Deepseek-R1-Llama-70B | [[Hugging face]](https://huggingface.co/datasets/Magpie-Align/Magpie-Reasoning-V2-250K-CoT-Deepseek-R1-Llama-70B)<br />[[Paper]](https://arxiv.org/abs/2406.08464)<br />[[Code]](https://github.com/magpie-align/magpie) | 1.62 GB                          | 250k           | This dataset is generated by Meta's Llama 3.1 70B Instruct, Llama 3.3 70B Instruct and deepseek-ai/DeepSeek-R1-Distill-Llama-70B using Magpie framework. |
+| NuminaMath-QwQ-CoT-5M                              | [[Hugging face]](https://huggingface.co/datasets/PrimeIntellect/NuminaMath-QwQ-CoT-5M) | 18 GB                            | 5.14M          | INTELLECT-MATH is a 7B parameter model optimized for mathematical reasoning. It was trained in two stages, an SFT stage, in which the model was fine-tuned on verified QwQ outputs, and an RL stage, in which the model was trained using the PRIME-RL recipe. |
+| LIMO                                               | [[Hugging face]](https://huggingface.co/datasets/GAIR/LIMO)<br />[[Code]]()<br />[[Model]]()<br />[[Paper]](https://github.com/GAIR-NLP/LIMO) | 16.1 MB                          | 817            | The Data curation process focuses on constructing a high-quality dataset on mathematical reasoning. |
+| s1K                                                | [[Hugging face]](https://huggingface.co/datasets/simplescaling/s1K) | 6.88 MB                          | 1,000          | s1K is a dataset of 1,000 examples of diverse, high-quality & difficult questions with distilled reasoning traces & solutions from Gemini Thining. |
+| OpenR1-Math-220k                                   | [[Hugging face]](https://huggingface.co/datasets/open-r1/OpenR1-Math-220k) | 8.43GB                           | 220k           | OpenR1-Math-220k is a large-scale dataset for mathematical reasoning. It consists of 220k math problems with two to four reasoning traces generated by DeepSeek R1 for problems from NuminaMath 1.5. The traces were verified using Math Verify for most samples and Llama-3.3-70B-Instruct as a judge for 12% of the samples, and each problem contains at least one reasoning trace with a correct answer. |
+| medical-o1-reasoning-SFT                           | [[Hugging face]](https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT) | 139 MB                           | 50k            | This dataset is used to fine-tune HuatuoGPT-o1, a medical LLM designed for advanced medical reasoning. This dataset is constructed using GPT-4o, which searches for solutions to verifiable medical problems and validates them through a medical verifier. |
+
 ## Citation
 
 ❤ If you find our repository useful in your research, please star us ⭐ and consider citing:
@@ -95,7 +109,7 @@ DeepSeek-R1 uses long CoT reasoning technology, with a thought chain length that
 ```
 @misc{liu2025DeepSeekR1_Reproduce,
   title={Awesome DeepSeek-R1},
-  author={Haoyang Liu and Zhihai Wang and Wenyu Mao},
+  author={Haoyang Liu and Zhihai Wang},
   year={2025},
   howpublished={\url{https://github.com/haoyangliu123/awesome-deepseek-r1}},
   note={Github Repository},
