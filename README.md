@@ -2,7 +2,7 @@
 A collection of the recent reproduction papers and projects on DeepSeek-R1
 
 
-[🎉](https://api-docs.deepseek.com/zh-cn/news/news250120) The **Awesome DeepSeek-R1 Collection** aims to serve as a repository of high-quality reproductions, adaptations, and extensions of the original DeepSeek-R1 model. This collection will include:
+🎉 The **Awesome DeepSeek-R1 Collection** aims to serve as a repository of high-quality reproductions, adaptations, and extensions of the original DeepSeek-R1 model. This collection will include:
 
 - **Reproduction Papers**: Detailed reports on successful reproductions of DeepSeek-R1, highlighting methodologies, results, and lessons learned.
 - **Code Repositories**: Open-source implementations of DeepSeek-R1, providing researchers and developers with the tools to experiment and build upon the model.
