@@ -109,7 +109,7 @@ DeepSeek-R1 uses long CoT reasoning technology, with a thought chain length that
 ```
 @misc{liu2025DeepSeekR1_Reproduce,
   title={Awesome DeepSeek-R1},
-  author={Haoyang Liu and Zhihai Wang},
+  author={Haoyang Liu and Zhihai Wang and Wenyu Mao},
   year={2025},
   howpublished={\url{https://github.com/haoyangliu123/awesome-deepseek-r1}},
   note={Github Repository},
